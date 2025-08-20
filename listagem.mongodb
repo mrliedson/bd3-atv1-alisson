@@ -1,0 +1,7 @@
+const database = 'BD3-NoSQL-AtlasMongoDB';
+
+const collection = 'BD3-NoSQL-ATV1';
+
+use(database);
+
+db['BD3-NoSQL-ATV1'].find({"cpf":"123.456.789-00"}, {cod_aluno:0, _id:0});

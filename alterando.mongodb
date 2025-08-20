@@ -1,0 +1,10 @@
+const database = 'BD3-NoSQL-AtlasMongoDB2';
+
+const collection = 'BD3-NoSQL-ATV12';
+
+use(database);
+
+db['BD3-NoSQL-ATV12'].update(
+    {cod_aluno: 'A001'},
+    {$set: {nome: 'Alisson Brendo da Silva Rodrigues', cpf: '123.456.789.00', rg: '12.123.456-7'}}
+);
